@@ -1,0 +1,6 @@
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Domain.DTO\bin\Debug\VisualizadorClinico.Domain.DTO.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Domain.DTO\bin\Debug\VisualizadorClinico.Domain.DTO.pdb
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Domain.DTO\obj\Debug\VisualizadorClinico.Domain.DTO.csproj.AssemblyReference.cache
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Domain.DTO\obj\Debug\VisualizadorClinico.Domain.DTO.csproj.CoreCompileInputs.cache
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Domain.DTO\obj\Debug\VisualizadorClinico.Domain.DTO.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Domain.DTO\obj\Debug\VisualizadorClinico.Domain.DTO.pdb

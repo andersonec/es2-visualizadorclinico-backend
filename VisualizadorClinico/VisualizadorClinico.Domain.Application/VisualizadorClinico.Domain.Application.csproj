@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFCEA92B-977E-4859-ABBD-2E3879E71AB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisualizadorClinico.Domain.Application</RootNamespace>
+    <AssemblyName>VisualizadorClinico.Domain.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppServices\AuthAppService.cs" />
+    <Compile Include="AppServices\UsuarioAppService.cs" />
+    <Compile Include="IAppServices\IAuthAppService.cs" />
+    <Compile Include="IAppServices\IUsuarioAppService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\VisualizadorClinico.Domain.DTO\VisualizadorClinico.Domain.DTO.csproj">
+      <Project>{6777B292-A971-4EF6-AA3E-068F1F423519}</Project>
+      <Name>VisualizadorClinico.Domain.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualizadorClinico.Infra.CrossCutting.Adapter\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj">
+      <Project>{D78323AE-84AC-4E24-8966-AE63BF41F8A7}</Project>
+      <Name>VisualizadorClinico.Infra.CrossCutting.Adapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualizadorClinico.Infra.Data\VisualizadorClinico.Infra.Data.csproj">
+      <Project>{95D57073-7AB9-44BA-AAEA-4832BBE3C844}</Project>
+      <Name>VisualizadorClinico.Infra.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualizadorClinico.Infra.Entities\VisualizadorClinico.Infra.Entities.csproj">
+      <Project>{145570fc-86a2-4632-95f4-2e85627bef4b}</Project>
+      <Name>VisualizadorClinico.Infra.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

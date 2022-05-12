@@ -1,0 +1,126 @@
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.csprojAssemblyReference.cache
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.AssemblyInfoInputs.cache
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.AssemblyInfo.cs
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\appsettings.json
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.exe
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.deps.json
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.runtimeconfig.json
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.runtimeconfig.dev.json
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\ref\VisualizadorClinico.Services.Api.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.pdb
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Autofac.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Domain.Application.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Domain.DTO.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.Adapter.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.IoC.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.Validation.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.Data.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.Entities.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Npgsql.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.IoC.pdb
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.IoC.dll.config
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Domain.Application.pdb
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Domain.DTO.pdb
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.Adapter.pdb
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.Validation.pdb
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.Data.pdb
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.Data.dll.config
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.Entities.pdb
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.xml
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.Bcl.HashCode.xml
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Npgsql.xml
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\staticwebassets\VisualizadorClinico.Services.Api.StaticWebAssets.Manifest.cache
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\staticwebassets\VisualizadorClinico.Services.Api.StaticWebAssets.xml
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\scopedcss\bundle\VisualizadorClinico.Services.Api.styles.css
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.RazorTargetAssemblyInfo.cache
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.csproj.CopyComplete
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\ref\VisualizadorClinico.Services.Api.dll
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.pdb
+C:\Users\Administrador\Documents\PROJETO\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.genruntimeconfig.cache
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.csproj.AssemblyReference.cache
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.AssemblyInfoInputs.cache
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.AssemblyInfo.cs
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.csproj.CoreCompileInputs.cache
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.pdb
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\appsettings.Development.json
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\appsettings.json
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.StaticWebAssets.xml
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.exe
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.deps.json
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.runtimeconfig.json
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.runtimeconfig.dev.json
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Services.Api.pdb
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Autofac.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Domain.Application.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Domain.DTO.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.Adapter.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.IoC.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.Validation.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.Data.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.Entities.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Npgsql.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.IoC.pdb
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.IoC.dll.config
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Domain.Application.pdb
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Domain.DTO.pdb
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.Adapter.pdb
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.CrossCutting.Validation.pdb
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.Data.pdb
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.Data.dll.config
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\VisualizadorClinico.Infra.Entities.pdb
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\scopedcss\bundle\VisualizadorClinico.Services.Api.styles.css
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\staticwebassets\VisualizadorClinico.Services.Api.StaticWebAssets.Manifest.cache
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.RazorTargetAssemblyInfo.cache
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.csproj.CopyComplete
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\refint\VisualizadorClinico.Services.Api.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\VisualizadorClinico.Services.Api.genruntimeconfig.cache
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\obj\Debug\net5.0\ref\VisualizadorClinico.Services.Api.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Services.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll

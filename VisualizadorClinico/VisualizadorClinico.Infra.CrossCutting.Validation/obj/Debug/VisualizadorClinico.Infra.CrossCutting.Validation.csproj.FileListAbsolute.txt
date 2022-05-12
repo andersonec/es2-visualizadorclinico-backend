@@ -1,0 +1,6 @@
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Infra.CrossCutting.Validation\bin\Debug\VisualizadorClinico.Infra.CrossCutting.Validation.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Infra.CrossCutting.Validation\bin\Debug\VisualizadorClinico.Infra.CrossCutting.Validation.pdb
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Infra.CrossCutting.Validation\obj\Debug\VisualizadorClinico.Infra.CrossCutting.Validation.csproj.AssemblyReference.cache
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Infra.CrossCutting.Validation\obj\Debug\VisualizadorClinico.Infra.CrossCutting.Validation.csproj.CoreCompileInputs.cache
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Infra.CrossCutting.Validation\obj\Debug\VisualizadorClinico.Infra.CrossCutting.Validation.dll
+C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Infra.CrossCutting.Validation\obj\Debug\VisualizadorClinico.Infra.CrossCutting.Validation.pdb
