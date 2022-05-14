@@ -169,9 +169,33 @@
   <ItemGroup>
     <Compile Include="Contexts\PgContext.cs" />
     <Compile Include="IRepositories\IAuthRepository.cs" />
+    <Compile Include="IRepositories\IPessoaRepository.cs" />
+    <Compile Include="IRepositories\IAdministradorRepository.cs" />
+    <Compile Include="IRepositories\ICirurgiaRepository.cs" />
+    <Compile Include="IRepositories\IConsultaRepository.cs" />
+    <Compile Include="IRepositories\IEnderecoRepository.cs" />
+    <Compile Include="IRepositories\IEnfermeiroRepository.cs" />
+    <Compile Include="IRepositories\IExameRepository.cs" />
+    <Compile Include="IRepositories\IHistoricoPacienteRepository.cs" />
+    <Compile Include="IRepositories\IHistoricoProfissionalRepository.cs" />
+    <Compile Include="IRepositories\IPacienteRepository.cs" />
+    <Compile Include="IRepositories\IProcedimentoRepository.cs" />
+    <Compile Include="IRepositories\IProfissionalRepository.cs" />
     <Compile Include="IRepositories\IUsuarioRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AuthRepository.cs" />
+    <Compile Include="Repositories\PacienteRepository.cs" />
+    <Compile Include="Repositories\ProcedimentoRepository.cs" />
+    <Compile Include="Repositories\ProfissionalRepository.cs" />
+    <Compile Include="Repositories\PessoaRepository.cs" />
+    <Compile Include="Repositories\AdministradorRepository.cs" />
+    <Compile Include="Repositories\CirurgiaRepository.cs" />
+    <Compile Include="Repositories\ConsultaRepository.cs" />
+    <Compile Include="Repositories\EnderecoRepository.cs" />
+    <Compile Include="Repositories\EnfermeiroRepository.cs" />
+    <Compile Include="Repositories\ExameRepository.cs" />
+    <Compile Include="Repositories\HistoricoPacienteRepository.cs" />
+    <Compile Include="Repositories\HistoricoProfissionalRepository.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
   </ItemGroup>
   <ItemGroup>

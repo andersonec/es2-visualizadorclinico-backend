@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,6 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministradorDTO.cs" />
+    <Compile Include="CirurgiaDTO.cs" />
+    <Compile Include="ConsultaDTO.cs" />
+    <Compile Include="EnderecoDTO.cs" />
+    <Compile Include="EnfermeiroDTO.cs" />
+    <Compile Include="ExameDTO.cs" />
+    <Compile Include="HistoricoPacienteDTO.cs" />
+    <Compile Include="HistoricoProfissionalDTO.cs" />
+    <Compile Include="PacienteDTO.cs" />
+    <Compile Include="PessoaDTO.cs" />
+    <Compile Include="ProcedimentoDTO.cs" />
+    <Compile Include="Profissional.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioDTO.cs" />
   </ItemGroup>

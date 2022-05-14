@@ -1,28 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Services.Api\\VisualizadorClinico.Services.Api.csproj": {}
+    "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Services.Api\\VisualizadorClinico.Services.Api.csproj": {}
   },
   "projects": {
-    "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Domain.Application\\VisualizadorClinico.Domain.Application.csproj": {
+    "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Domain.Application\\VisualizadorClinico.Domain.Application.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Domain.Application\\VisualizadorClinico.Domain.Application.csproj",
+        "projectUniqueName": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Domain.Application\\VisualizadorClinico.Domain.Application.csproj",
         "projectName": "VisualizadorClinico.Domain.Application",
-        "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Domain.Application\\VisualizadorClinico.Domain.Application.csproj",
+        "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Domain.Application\\VisualizadorClinico.Domain.Application.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj": {
-                "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj"
+              "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj": {
+                "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj"
               },
-              "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj": {
-                "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj"
+              "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj": {
+                "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj"
               },
-              "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj": {
-                "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj"
+              "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj": {
+                "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj"
               },
-              "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj": {
-                "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj"
+              "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj": {
+                "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj"
               }
             }
           }
@@ -32,11 +32,11 @@
         "net472": {}
       }
     },
-    "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj": {
+    "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj",
+        "projectUniqueName": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj",
         "projectName": "VisualizadorClinico.Domain.DTO",
-        "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj",
+        "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -47,19 +47,19 @@
         "net472": {}
       }
     },
-    "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj": {
+    "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj",
+        "projectUniqueName": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj",
         "projectName": "VisualizadorClinico.Infra.CrossCutting.Adapter",
-        "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj",
+        "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj": {
-                "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj"
+              "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj": {
+                "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Domain.DTO\\VisualizadorClinico.Domain.DTO.csproj"
               },
-              "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj": {
-                "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj"
+              "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj": {
+                "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj"
               }
             }
           }
@@ -69,25 +69,25 @@
         "net472": {}
       }
     },
-    "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.IoC\\VisualizadorClinico.Infra.CrossCutting.IoC.csproj": {
+    "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.IoC\\VisualizadorClinico.Infra.CrossCutting.IoC.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.IoC\\VisualizadorClinico.Infra.CrossCutting.IoC.csproj",
+        "projectUniqueName": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.IoC\\VisualizadorClinico.Infra.CrossCutting.IoC.csproj",
         "projectName": "VisualizadorClinico.Infra.CrossCutting.IoC",
-        "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.IoC\\VisualizadorClinico.Infra.CrossCutting.IoC.csproj",
+        "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.IoC\\VisualizadorClinico.Infra.CrossCutting.IoC.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Domain.Application\\VisualizadorClinico.Domain.Application.csproj": {
-                "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Domain.Application\\VisualizadorClinico.Domain.Application.csproj"
+              "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Domain.Application\\VisualizadorClinico.Domain.Application.csproj": {
+                "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Domain.Application\\VisualizadorClinico.Domain.Application.csproj"
               },
-              "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj": {
-                "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj"
+              "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj": {
+                "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.Adapter\\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj"
               },
-              "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.Validation\\VisualizadorClinico.Infra.CrossCutting.Validation.csproj": {
-                "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.Validation\\VisualizadorClinico.Infra.CrossCutting.Validation.csproj"
+              "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.Validation\\VisualizadorClinico.Infra.CrossCutting.Validation.csproj": {
+                "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.Validation\\VisualizadorClinico.Infra.CrossCutting.Validation.csproj"
               },
-              "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj": {
-                "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj"
+              "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj": {
+                "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj"
               }
             }
           }
@@ -97,11 +97,11 @@
         "net472": {}
       }
     },
-    "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.Validation\\VisualizadorClinico.Infra.CrossCutting.Validation.csproj": {
+    "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.Validation\\VisualizadorClinico.Infra.CrossCutting.Validation.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.Validation\\VisualizadorClinico.Infra.CrossCutting.Validation.csproj",
+        "projectUniqueName": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.Validation\\VisualizadorClinico.Infra.CrossCutting.Validation.csproj",
         "projectName": "VisualizadorClinico.Infra.CrossCutting.Validation",
-        "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.Validation\\VisualizadorClinico.Infra.CrossCutting.Validation.csproj",
+        "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.Validation\\VisualizadorClinico.Infra.CrossCutting.Validation.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -112,16 +112,16 @@
         "net472": {}
       }
     },
-    "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj": {
+    "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj",
+        "projectUniqueName": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj",
         "projectName": "VisualizadorClinico.Infra.Data",
-        "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj",
+        "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Data\\VisualizadorClinico.Infra.Data.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj": {
-                "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj"
+              "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj": {
+                "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj"
               }
             }
           }
@@ -131,11 +131,11 @@
         "net472": {}
       }
     },
-    "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj": {
+    "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj",
+        "projectUniqueName": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj",
         "projectName": "VisualizadorClinico.Infra.Entities",
-        "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj",
+        "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.Entities\\VisualizadorClinico.Infra.Entities.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -146,14 +146,14 @@
         "net472": {}
       }
     },
-    "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Services.Api\\VisualizadorClinico.Services.Api.csproj": {
+    "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Services.Api\\VisualizadorClinico.Services.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Services.Api\\VisualizadorClinico.Services.Api.csproj",
+        "projectUniqueName": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Services.Api\\VisualizadorClinico.Services.Api.csproj",
         "projectName": "VisualizadorClinico.Services.Api",
-        "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Services.Api\\VisualizadorClinico.Services.Api.csproj",
+        "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Services.Api\\VisualizadorClinico.Services.Api.csproj",
         "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Services.Api\\obj\\",
+        "outputPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Services.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -175,8 +175,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.IoC\\VisualizadorClinico.Infra.CrossCutting.IoC.csproj": {
-                "projectPath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Infra.CrossCutting.IoC\\VisualizadorClinico.Infra.CrossCutting.IoC.csproj"
+              "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.IoC\\VisualizadorClinico.Infra.CrossCutting.IoC.csproj": {
+                "projectPath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Infra.CrossCutting.IoC\\VisualizadorClinico.Infra.CrossCutting.IoC.csproj"
               }
             }
           }
@@ -242,7 +242,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

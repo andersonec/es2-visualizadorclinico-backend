@@ -31,8 +31,20 @@ namespace VisualizadorClinico.Infra.CrossCutting.IoC
 
             #region Dependency Injection - SQL Repositories
 
-            builder.RegisterType<UsuarioRepository>().As<IUsuarioRepository>();
+            builder.RegisterType<AdministradorRepository>().As<IAdministradorRepository>();
             builder.RegisterType<AuthRepository>().As<IAuthRepository>();
+            builder.RegisterType<CirurgiaRepository>().As<ICirurgiaRepository>();
+            builder.RegisterType<ConsultaRepository>().As<IConsultaRepository>();
+            builder.RegisterType<EnderecoRepository>().As<IEnderecoRepository>();
+            builder.RegisterType<EnfermeiroRepository>().As<IEnfermeiroRepository>();
+            builder.RegisterType<ExameRepository>().As<IExameRepository>();
+            builder.RegisterType<HistoricoPacienteRepository>().As<IHistoricoPacienteRepository>();
+            builder.RegisterType<HistoricoProfissionalRepository>().As<IHistoricoProfissionalRepository>();
+            builder.RegisterType<PacienteRepository>().As<IPacienteRepository>();
+            builder.RegisterType<PessoaRepository>().As<IPessoaRepository>();
+            builder.RegisterType<ProcedimentoRepository>().As<IProcedimentoRepository>();
+            builder.RegisterType<ProfissionalRepository>().As<IProfissionalRepository>();
+            builder.RegisterType<UsuarioRepository>().As<IUsuarioRepository>();
 
             #endregion
 

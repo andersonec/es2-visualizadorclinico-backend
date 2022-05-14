@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B2n5WKcVVRCgX53Ie7KgOsukFEEucLX5Kh4/EH7oRUKZ5PKasI0mEA/nGyi3I6H9d+EE+oqHs/54kt3W4RmvSA==",
+  "dgSpecHash": "o3jlwcKqdhfRV4qge+WvvMwdd6FkUZEH+mKwlVD7PLp5hfPKXS6i/GOMnIRA7RkFv0oQI7ULDJkhtLF42DNbMA==",
   "success": true,
-  "projectFilePath": "C:\\UFS\\2021.2\\Engenharia de Software II\\VisualizadorClinico\\VisualizadorClinico.Services.Api\\VisualizadorClinico.Services.Api.csproj",
+  "projectFilePath": "C:\\PROJETOS\\es2-visualizadorclinico-backend\\VisualizadorClinico.Services.Api\\VisualizadorClinico.Services.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ander\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\ander\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

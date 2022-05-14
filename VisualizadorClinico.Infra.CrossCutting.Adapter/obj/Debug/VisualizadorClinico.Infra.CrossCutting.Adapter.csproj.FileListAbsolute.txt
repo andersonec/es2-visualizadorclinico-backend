@@ -9,3 +9,14 @@ C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.
 C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Infra.CrossCutting.Adapter\obj\Debug\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj.CopyComplete
 C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Infra.CrossCutting.Adapter\obj\Debug\VisualizadorClinico.Infra.CrossCutting.Adapter.dll
 C:\UFS\2021.2\Engenharia de Software II\VisualizadorClinico\VisualizadorClinico.Infra.CrossCutting.Adapter\obj\Debug\VisualizadorClinico.Infra.CrossCutting.Adapter.pdb
+C:\PROJETOS\es2-visualizadorclinico-backend\VisualizadorClinico.Infra.CrossCutting.Adapter\bin\Debug\VisualizadorClinico.Infra.CrossCutting.Adapter.dll
+C:\PROJETOS\es2-visualizadorclinico-backend\VisualizadorClinico.Infra.CrossCutting.Adapter\bin\Debug\VisualizadorClinico.Infra.CrossCutting.Adapter.pdb
+C:\PROJETOS\es2-visualizadorclinico-backend\VisualizadorClinico.Infra.CrossCutting.Adapter\bin\Debug\VisualizadorClinico.Domain.DTO.dll
+C:\PROJETOS\es2-visualizadorclinico-backend\VisualizadorClinico.Infra.CrossCutting.Adapter\bin\Debug\VisualizadorClinico.Infra.Entities.dll
+C:\PROJETOS\es2-visualizadorclinico-backend\VisualizadorClinico.Infra.CrossCutting.Adapter\bin\Debug\VisualizadorClinico.Domain.DTO.pdb
+C:\PROJETOS\es2-visualizadorclinico-backend\VisualizadorClinico.Infra.CrossCutting.Adapter\bin\Debug\VisualizadorClinico.Infra.Entities.pdb
+C:\PROJETOS\es2-visualizadorclinico-backend\VisualizadorClinico.Infra.CrossCutting.Adapter\obj\Debug\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj.AssemblyReference.cache
+C:\PROJETOS\es2-visualizadorclinico-backend\VisualizadorClinico.Infra.CrossCutting.Adapter\obj\Debug\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj.CoreCompileInputs.cache
+C:\PROJETOS\es2-visualizadorclinico-backend\VisualizadorClinico.Infra.CrossCutting.Adapter\obj\Debug\VisualizadorClinico.Infra.CrossCutting.Adapter.csproj.CopyComplete
+C:\PROJETOS\es2-visualizadorclinico-backend\VisualizadorClinico.Infra.CrossCutting.Adapter\obj\Debug\VisualizadorClinico.Infra.CrossCutting.Adapter.dll
+C:\PROJETOS\es2-visualizadorclinico-backend\VisualizadorClinico.Infra.CrossCutting.Adapter\obj\Debug\VisualizadorClinico.Infra.CrossCutting.Adapter.pdb

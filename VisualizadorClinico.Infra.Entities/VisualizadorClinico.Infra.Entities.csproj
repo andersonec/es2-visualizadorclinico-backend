@@ -42,6 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador.cs" />
+    <Compile Include="Cirurgia.cs" />
+    <Compile Include="Consulta.cs" />
+    <Compile Include="Endereco.cs" />
+    <Compile Include="Enfermeiro.cs" />
+    <Compile Include="Exame.cs" />
+    <Compile Include="HistoricoPaciente.cs" />
+    <Compile Include="HistoricoProfissional.cs" />
+    <Compile Include="Paciente.cs" />
+    <Compile Include="Pessoa.cs" />
+    <Compile Include="Procedimento.cs" />
+    <Compile Include="Profissional.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Token.cs" />
     <Compile Include="Usuario.cs" />
