@@ -10,7 +10,7 @@ namespace VisualizadorClinico.Domain.Application.IAppServices
 {
     public interface IProfissionalAppService
     {
-        void Add(ProfissionalDTO obj);
+        ProfissionalDTO Add(ProfissionalDTO obj);
 
         ProfissionalDTO GetById(int id);
 

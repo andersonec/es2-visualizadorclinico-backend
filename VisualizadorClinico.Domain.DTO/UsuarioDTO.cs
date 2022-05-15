@@ -10,7 +10,6 @@ namespace VisualizadorClinico.Domain.DTO
     {
         public int id_usuario { get; set; }
         public string login { get; set; }
-        //public string senha { get; set; }
         public int tipo { get; set; }
         public bool status { get; set; }
     }
@@ -19,5 +18,13 @@ namespace VisualizadorClinico.Domain.DTO
     {
         public string login { get; set; }
         public string senha { get; set; }
+    }
+    public class NovoUsuarioDTO
+    {
+        public int id_usuario { get; set; }
+        public string login { get; set; }
+        public string senha { get; set; }
+        public int tipo { get; set; }
+        public bool status { get; set; }
     }
 }

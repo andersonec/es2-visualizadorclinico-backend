@@ -22,16 +22,18 @@ namespace VisualizadorClinico.Domain.Application.AppServices
             _pessoaRepository = pessoaRepository;
         }
 
-        public void Add(PessoaDTO obj)
+        public PessoaDTO Add(NovaPessoaDTO obj)
         {
             if (obj != null)
             {
-                var pessoa = _pessoaMapper.MapperToEntity(obj);
+                var pessoa = _pessoaMapper.MapperNewToEntity(obj);
 
-                _pessoaRepository.Add(pessoa);
+                var novaPessoa = _pessoaRepository.Add(pessoa);
+
+                return _pessoaMapper.MapperToDTO(novaPessoa);
             }
             else
-                return;
+                return null;
         }
 
         public virtual IEnumerable<PessoaDTO> GetAll()

@@ -19,7 +19,20 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
             {
                 id_usuario = userDTO.id_usuario,
                 login = userDTO.login,
-                //senha = userDTO.senha,
+                tipo = userDTO.tipo,
+                status = userDTO.status
+            };
+
+            return user;
+        }
+
+        public Usuario MapperNewToEntity(NovoUsuarioDTO userDTO)
+        {
+            Usuario user = new Usuario
+            {
+                id_usuario = userDTO.id_usuario,
+                login = userDTO.login,
+                senha = userDTO.senha,
                 tipo = userDTO.tipo,
                 status = userDTO.status
             };
@@ -35,7 +48,6 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
                 {
                     id_usuario = user.id_usuario,
                     login = user.login,
-                    //senha = user.senha,
                     tipo = user.tipo,
                     status = user.status
                 };
@@ -52,7 +64,19 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
             {
                 id_usuario = user.id_usuario,
                 login = user.login,
-                //senha = user.senha,
+                tipo = user.tipo,
+                status = user.status
+            };
+
+            return userDTO;
+        }
+        public NovoUsuarioDTO MapperToNewDTO(Usuario user)
+        {
+            NovoUsuarioDTO userDTO = new NovoUsuarioDTO
+            {
+                id_usuario = user.id_usuario,
+                login = user.login,
+                senha = "**********",
                 tipo = user.tipo,
                 status = user.status
             };

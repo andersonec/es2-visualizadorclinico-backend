@@ -18,12 +18,14 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             _context = Context;
         }
 
-        public virtual void Add(Profissional obj)
+        public virtual Profissional Add(Profissional obj)
         {
             try
             {
-                _context.Set<Profissional>().Add(obj);
+                var newProfessional = _context.Set<Profissional>().Add(obj);
                 _context.SaveChanges();
+
+                return newProfessional.Entity;
             }
             catch (Exception ex)
             {
@@ -35,7 +37,7 @@ namespace VisualizadorClinico.Infra.Data.Repositories
         {
             try
             {
-                var entity = _context.Set<Profissional>().Find(id);
+                var entity = _context.Profissionais.Where(b => b.registro_profissional == id).FirstOrDefault();
 
                 if (entity == null)
                     return null;
@@ -70,6 +72,7 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             try
             {
                 //_context.ChangeTracker.Clear();
+                _context.Profissionais.Attach(obj);
                 _context.Entry(obj).State = EntityState.Modified;
                 _context.SaveChanges();
             }

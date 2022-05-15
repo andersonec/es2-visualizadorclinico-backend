@@ -9,7 +9,7 @@ namespace VisualizadorClinico.Infra.Data.IRepositories
 {
     public interface IUsuarioRepository
     {
-        void Add(Usuario entity);
+        Usuario Add(Usuario entity);
 
         Usuario GetById(int id);
 

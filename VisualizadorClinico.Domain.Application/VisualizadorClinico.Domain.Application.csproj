@@ -42,8 +42,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppServices\AuthAppService.cs" />
+    <Compile Include="AppServices\AdministradorAppService.cs" />
+    <Compile Include="AppServices\CirurgiaAppService.cs" />
+    <Compile Include="AppServices\ConsultaAppService.cs" />
+    <Compile Include="AppServices\EnderecoAppService.cs" />
+    <Compile Include="AppServices\EnfermeiroAppService.cs" />
+    <Compile Include="AppServices\ExameAppService.cs" />
+    <Compile Include="AppServices\HistoricoPacienteAppService.cs" />
+    <Compile Include="AppServices\HistoricoProfissionalAppService.cs" />
+    <Compile Include="AppServices\PacienteAppService.cs" />
+    <Compile Include="AppServices\PessoaAppService.cs" />
+    <Compile Include="AppServices\ProcedimentoAppService.cs" />
+    <Compile Include="AppServices\ProfissionalAppService.cs" />
     <Compile Include="AppServices\UsuarioAppService.cs" />
     <Compile Include="IAppServices\IAuthAppService.cs" />
+    <Compile Include="IAppServices\IAdministradorAppService.cs" />
+    <Compile Include="IAppServices\ICirurgiaAppService.cs" />
+    <Compile Include="IAppServices\IConsultaAppService.cs" />
+    <Compile Include="IAppServices\IEnderecoAppService.cs" />
+    <Compile Include="IAppServices\IEnfermeiroAppService.cs" />
+    <Compile Include="IAppServices\IExameAppService.cs" />
+    <Compile Include="IAppServices\IHistoricoPacienteAppService.cs" />
+    <Compile Include="IAppServices\IHistoricoProfissionalAppService.cs" />
+    <Compile Include="IAppServices\IPacienteAppService.cs" />
+    <Compile Include="IAppServices\IPessoaAppService.cs" />
+    <Compile Include="IAppServices\IProcedimentoAppService.cs" />
+    <Compile Include="IAppServices\IProfissionalAppService.cs" />
     <Compile Include="IAppServices\IUsuarioAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

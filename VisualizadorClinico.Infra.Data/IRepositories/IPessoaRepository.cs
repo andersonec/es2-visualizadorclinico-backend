@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace VisualizadorClinico.Infra.Data.IRepositories
 {
     public interface IPessoaRepository
     {
-        void Add(Pessoa entity);
+        Pessoa Add(Pessoa entity);
 
         Pessoa GetById(int id);
 

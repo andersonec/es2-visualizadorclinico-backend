@@ -10,7 +10,7 @@ namespace VisualizadorClinico.Domain.Application.IAppServices
 {
     public interface IPessoaAppService
     {
-        void Add(PessoaDTO obj);
+        PessoaDTO Add(NovaPessoaDTO obj);
 
         PessoaDTO GetById(int id);
 

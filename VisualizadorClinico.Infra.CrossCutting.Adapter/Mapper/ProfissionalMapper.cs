@@ -17,7 +17,9 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
         {
             Profissional profissional = new Profissional
             {
-                id_usuario = profissionalDTO.id_usuario,
+                id_profissional = profissionalDTO.id_usuario,
+                registro_profissional = profissionalDTO.registro_profissional,
+                especialidade = profissionalDTO.especialidade,
             };
 
             return profissional;
@@ -29,7 +31,9 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
             {
                 ProfissionalDTO profissionalDTO = new ProfissionalDTO
                 {
-                    id_usuario = profissional.id_usuario,
+                    id_usuario = profissional.id_profissional,
+                    registro_profissional = profissional.registro_profissional,
+                    especialidade = profissional.especialidade,
                 };
 
                 profissionalDTOs.Add(profissionalDTO);
@@ -42,7 +46,9 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
         {
             ProfissionalDTO profissionalDTO = new ProfissionalDTO
             {
-                id_usuario = profissional.id_usuario,
+                id_usuario = profissional.id_profissional,
+                registro_profissional = profissional.registro_profissional,
+                especialidade = profissional.especialidade,
             };
 
             return profissionalDTO;

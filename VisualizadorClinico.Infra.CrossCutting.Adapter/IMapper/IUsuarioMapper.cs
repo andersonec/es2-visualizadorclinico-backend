@@ -11,7 +11,9 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.IMapper
     public interface IUsuarioMapper
     {
         Usuario MapperToEntity(UsuarioDTO userDTO);
+        Usuario MapperNewToEntity(NovoUsuarioDTO userDTO);
         IEnumerable<UsuarioDTO> MapperListUsers(IEnumerable<Usuario> users);
         UsuarioDTO MapperToDTO(Usuario user);
+        NovoUsuarioDTO MapperToNewDTO(Usuario user);
     }
 }

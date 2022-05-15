@@ -11,7 +11,9 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.IMapper
     public interface IPessoaMapper
     {
         Pessoa MapperToEntity(PessoaDTO pessoaDTO);
+        Pessoa MapperNewToEntity(NovaPessoaDTO pessoaDTO);
         IEnumerable<PessoaDTO> MapperListPessoas(IEnumerable<Pessoa> pessoas);
         PessoaDTO MapperToDTO(Pessoa pessoa);
+        NovaPessoaDTO MapperToNewDTO(Pessoa pessoa);
     }
 }

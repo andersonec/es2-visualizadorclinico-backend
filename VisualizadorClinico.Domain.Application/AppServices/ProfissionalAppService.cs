@@ -22,16 +22,18 @@ namespace VisualizadorClinico.Domain.Application.AppServices
             _profissionalRepository = profissionalRepository;
         }
 
-        public void Add(ProfissionalDTO obj)
+        public ProfissionalDTO Add(ProfissionalDTO obj)
         {
             if (obj != null)
             {
                 var profissional = _profissionalMapper.MapperToEntity(obj);
 
-                _profissionalRepository.Add(profissional);
+                var newProfessional = _profissionalRepository.Add(profissional);
+
+                return _profissionalMapper.MapperToDTO(newProfessional);
             }
             else
-                return;
+                return null;
         }
 
         public virtual IEnumerable<ProfissionalDTO> GetAll()

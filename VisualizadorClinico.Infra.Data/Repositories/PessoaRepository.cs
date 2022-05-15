@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,12 +19,14 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             _context = Context;
         }
 
-        public virtual void Add(Pessoa obj)
+        public virtual Pessoa Add(Pessoa obj)
         {
             try
             {
-                _context.Set<Pessoa>().Add(obj);
+                var pessoa = _context.Set<Pessoa>().Add(obj);
                 _context.SaveChanges();
+
+                return pessoa.Entity;
             }
             catch (Exception ex)
             {
@@ -70,6 +73,7 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             try
             {
                 //_context.ChangeTracker.Clear();
+                _context.Pessoas.Attach(obj);
                 _context.Entry(obj).State = EntityState.Modified;
                 _context.SaveChanges();
             }

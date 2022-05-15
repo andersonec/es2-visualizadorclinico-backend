@@ -10,13 +10,13 @@ namespace VisualizadorClinico.Domain.Application.IAppServices
 {
     public interface IUsuarioAppService
     {
-        void Add(UsuarioDTO obj);
+        NovoUsuarioDTO Add(NovoUsuarioDTO obj);
 
         UsuarioDTO GetById(int id);
 
         IEnumerable<UsuarioDTO> GetAll();
 
-        void Update(UsuarioDTO obj);
+        void Update(NovoUsuarioDTO obj);
 
         void Remove(UsuarioDTO obj);
 

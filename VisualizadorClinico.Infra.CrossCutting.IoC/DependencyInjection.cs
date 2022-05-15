@@ -16,14 +16,38 @@ namespace VisualizadorClinico.Infra.CrossCutting.IoC
         {
             #region Dependency Injection - Domain.Application
 
-            builder.RegisterType<UsuarioAppService>().As<IUsuarioAppService>();
+            builder.RegisterType<AdministradorAppService>().As<IAdministradorAppService>();
             builder.RegisterType<AuthAppService>().As<IAuthAppService>();
+            builder.RegisterType<CirurgiaAppService>().As<ICirurgiaAppService>();
+            builder.RegisterType<ConsultaAppService>().As<IConsultaAppService>();
+            builder.RegisterType<EnderecoAppService>().As<IEnderecoAppService>();
+            builder.RegisterType<EnfermeiroAppService>().As<IEnfermeiroAppService>();
+            builder.RegisterType<ExameAppService>().As<IExameAppService>();
+            builder.RegisterType<HistoricoPacienteAppService>().As<IHistoricoPacienteAppService>();
+            builder.RegisterType<HistoricoProfissionalAppService>().As<IHistoricoProfissionalAppService>();
+            builder.RegisterType<PacienteAppService>().As<IPacienteAppService>();
+            builder.RegisterType<PessoaAppService>().As<IPessoaAppService>();
+            builder.RegisterType<ProcedimentoAppService>().As<IProcedimentoAppService>();
+            builder.RegisterType<ProfissionalAppService>().As<IProfissionalAppService>();
+            builder.RegisterType<UsuarioAppService>().As<IUsuarioAppService>();
 
             #endregion
 
 
             #region Dependency Injection - Mapper
 
+            builder.RegisterType<AdministradorMapper>().As<IAdministradorMapper>();
+            builder.RegisterType<CirurgiaMapper>().As<ICirurgiaMapper>();
+            builder.RegisterType<ConsultaMapper>().As<IConsultaMapper>();
+            builder.RegisterType<EnderecoMapper>().As<IEnderecoMapper>();
+            builder.RegisterType<EnfermeiroMapper>().As<IEnfermeiroMapper>();
+            builder.RegisterType<ExameMapper>().As<IExameMapper>();
+            builder.RegisterType<HistoricoPacienteMapper>().As<IHistoricoPacienteMapper>();
+            builder.RegisterType<HistoricoProfissionalMapper>().As<IHistoricoProfissionalMapper>();
+            builder.RegisterType<PacienteMapper>().As<IPacienteMapper>();
+            builder.RegisterType<PessoaMapper>().As<IPessoaMapper>();
+            builder.RegisterType<ProcedimentoMapper>().As<IProcedimentoMapper>();
+            builder.RegisterType<ProfissionalMapper>().As<IProfissionalMapper>();
             builder.RegisterType<UsuarioMapper>().As<IUsuarioMapper>();
 
             #endregion

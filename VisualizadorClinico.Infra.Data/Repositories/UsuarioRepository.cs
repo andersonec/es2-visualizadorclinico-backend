@@ -18,12 +18,14 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             _context = Context;
         }
 
-        public virtual void Add(Usuario obj)
+        public virtual Usuario Add(Usuario obj)
         {
             try
             {
-                _context.Set<Usuario>().Add(obj);
+                var usuario = _context.Set<Usuario>().Add(obj);
                 _context.SaveChanges();
+
+                return usuario.Entity;
             }
             catch (Exception ex)
             {
@@ -70,6 +72,7 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             try
             {
                 //_context.ChangeTracker.Clear();
+                _context.Usuarios.Attach(obj);
                 _context.Entry(obj).State = EntityState.Modified;
                 _context.SaveChanges();
             }

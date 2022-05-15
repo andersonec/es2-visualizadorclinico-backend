@@ -9,7 +9,7 @@ namespace VisualizadorClinico.Infra.Data.IRepositories
 {
     public interface IProfissionalRepository
     {
-        void Add(Profissional entity);
+        Profissional Add(Profissional entity);
 
         Profissional GetById(int id);
 

@@ -17,7 +17,7 @@ namespace VisualizadorClinico.Infra.Entities
         public string nome { get; set; }
         public string sexo { get; set; }
         public string registro_geral { get; set; }
-        public string naturalidade { get; set; }
+        public int naturalidade { get; set; }
         public DateTime data_nascimento { get; set; } = new DateTime();
         public string ocupacao { get; set; }
         public string telefone { get; set; }
