@@ -22,16 +22,18 @@ namespace VisualizadorClinico.Domain.Application.AppServices
             _pacienteRepository = pacienteRepository;
         }
 
-        public void Add(PacienteDTO obj)
+        public PacienteDTO Add(PacienteDTO obj)
         {
             if (obj != null)
             {
                 var paciente = _pacienteMapper.MapperToEntity(obj);
 
-                _pacienteRepository.Add(paciente);
+                var novoPaciente = _pacienteRepository.Add(paciente);
+
+                return _pacienteMapper.MapperToDTO(novoPaciente);
             }
             else
-                return;
+                return null;
         }
 
         public virtual IEnumerable<PacienteDTO> GetAll()
@@ -44,7 +46,7 @@ namespace VisualizadorClinico.Domain.Application.AppServices
                 return _pacienteMapper.MapperListPacientes(paciente);
         }
 
-        public virtual PacienteDTO GetById(int id)
+        public virtual PacienteDTO GetById(string id)
         {
             var paciente = _pacienteRepository.GetById(id);
             return _pacienteMapper.MapperToDTO(paciente);

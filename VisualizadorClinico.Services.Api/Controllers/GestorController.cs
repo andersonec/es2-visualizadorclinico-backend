@@ -38,12 +38,25 @@ namespace VisualizadorClinico.Services.Api.Controllers
                 return BadRequest("Insira todos os dados do profissional");
 
             var pessoa = _pessoaAppService.Add(novoUsuario.pessoa);
-            var usuario = _usuarioAppService.Add(novoUsuario.usuario);
-            var profissional = _profissionalAppService.Add(novoUsuario.profissional);
 
-            usuario.id_usuario = pessoa.id_pessoa;
+            var usuario = new NovoUsuarioDTO
+            {
+                id_usuario = pessoa.id_pessoa,
+                login = novoUsuario.usuario.login,
+                senha = novoUsuario.usuario.senha,
+                status = novoUsuario.usuario.status,
+                tipo = novoUsuario.usuario.tipo
+            };
+            usuario = _usuarioAppService.Add(usuario);
 
-            profissional.id_usuario = usuario.id_usuario;
+            var profissional = new ProfissionalDTO
+            {
+                id_usuario = usuario.id_usuario,
+                registro_profissional = novoUsuario.profissional.registro_profissional,
+                especialidade = novoUsuario.profissional.especialidade
+            };
+            profissional = _profissionalAppService.Add(novoUsuario.profissional);
+
 
             var newUser = new NewProfessionalReturn
             {

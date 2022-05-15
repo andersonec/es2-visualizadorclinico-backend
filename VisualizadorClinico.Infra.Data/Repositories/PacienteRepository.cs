@@ -18,12 +18,14 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             _context = Context;
         }
 
-        public virtual void Add(Paciente obj)
+        public virtual Paciente Add(Paciente obj)
         {
             try
             {
-                _context.Set<Paciente>().Add(obj);
+                var paciente = _context.Set<Paciente>().Add(obj);
                 _context.SaveChanges();
+
+                return paciente.Entity;
             }
             catch (Exception ex)
             {
@@ -31,11 +33,11 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             }
         }
 
-        public virtual Paciente GetById(int id)
+        public virtual Paciente GetById(string id)
         {
             try
             {
-                var entity = _context.Set<Paciente>().Find(id);
+                var entity = _context.Pacientes.Where(b => b.registro_sus == id).FirstOrDefault();
 
                 if (entity == null)
                     return null;

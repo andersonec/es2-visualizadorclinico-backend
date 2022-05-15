@@ -9,9 +9,9 @@ namespace VisualizadorClinico.Infra.Data.IRepositories
 {
     public interface IPacienteRepository
     {
-        void Add(Paciente entity);
+        Paciente Add(Paciente entity);
 
-        Paciente GetById(int id);
+        Paciente GetById(string id);
 
         IEnumerable<Paciente> GetAll();
 

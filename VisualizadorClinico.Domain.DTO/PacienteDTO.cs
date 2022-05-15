@@ -14,6 +14,6 @@ namespace VisualizadorClinico.Domain.DTO
         public string registro_sus { get; set; }
         public string tipo_sanguineo { get; set; }
         public int grupo { get; set; }
-        public string data_cadastro { get; set; }
+        public DateTime data_cadastro { get; set; } = new DateTime();
     }
 }

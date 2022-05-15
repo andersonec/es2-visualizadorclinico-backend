@@ -17,6 +17,11 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
         {
             Paciente paciente = new Paciente
             {
+                id_paciente = pacienteDTO.id_paciente,
+                data_cadastro = pacienteDTO.data_cadastro,
+                grupo = pacienteDTO.grupo,
+                registro_sus = pacienteDTO.registro_sus,
+                tipo_sanguineo = pacienteDTO.tipo_sanguineo,
             };
 
             return paciente;
@@ -28,6 +33,11 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
             {
                 PacienteDTO pacienteDTO = new PacienteDTO
                 {
+                    id_paciente = paciente.id_paciente,
+                    data_cadastro = paciente.data_cadastro,
+                    grupo = paciente.grupo,
+                    registro_sus = paciente.registro_sus,
+                    tipo_sanguineo = paciente.tipo_sanguineo,
                 };
 
                 pacienteDTOs.Add(pacienteDTO);
@@ -40,6 +50,11 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
         {
             PacienteDTO pacienteDTO = new PacienteDTO
             {
+                id_paciente = paciente.id_paciente,
+                data_cadastro = paciente.data_cadastro,
+                grupo = paciente.grupo,
+                registro_sus = paciente.registro_sus,
+                tipo_sanguineo = paciente.tipo_sanguineo,
             };
 
             return pacienteDTO;

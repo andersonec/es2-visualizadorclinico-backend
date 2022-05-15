@@ -10,9 +10,9 @@ namespace VisualizadorClinico.Domain.Application.IAppServices
 {
     public interface IPacienteAppService
     {
-        void Add(PacienteDTO obj);
+        PacienteDTO Add(PacienteDTO obj);
 
-        PacienteDTO GetById(int id);
+        PacienteDTO GetById(string id);
 
         IEnumerable<PacienteDTO> GetAll();
 
