@@ -13,7 +13,7 @@ namespace VisualizadorClinico.Infra.Entities
     {
         [Key]
         public int id_profissional { get; set; }
-        public int registro_profissional { get; set; }
+        public string registro_profissional { get; set; }
         public string especialidade { get; set; }
     }
 }

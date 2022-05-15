@@ -17,6 +17,14 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
         {
             Endereco endereco = new Endereco
             {
+                id_endereco = enderecoDTO.id_endereco,
+                bairro = enderecoDTO.bairro,
+                cep = enderecoDTO.cep,
+                cidade = enderecoDTO.cidade,
+                complemento = enderecoDTO.complemento,
+                logradouro = enderecoDTO.logradouro,
+                numero = enderecoDTO.numero,
+                tipo_logradouro =enderecoDTO.tipo_logradouro,
             };
 
             return endereco;
@@ -28,6 +36,14 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
             {
                 EnderecoDTO enderecoDTO = new EnderecoDTO
                 {
+                    id_endereco = endereco.id_endereco,
+                    bairro = endereco.bairro,
+                    cep = endereco.cep,
+                    cidade = endereco.cidade,
+                    complemento = endereco.complemento,
+                    logradouro = endereco.logradouro,
+                    numero = endereco.numero,
+                    tipo_logradouro = endereco.tipo_logradouro,
                 };
 
                 enderecoDTOs.Add(enderecoDTO);
@@ -40,6 +56,14 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
         {
             EnderecoDTO enderecoDTO = new EnderecoDTO
             {
+                id_endereco = endereco.id_endereco,
+                bairro = endereco.bairro,
+                cep = endereco.cep,
+                cidade = endereco.cidade,
+                complemento = endereco.complemento,
+                logradouro = endereco.logradouro,
+                numero = endereco.numero,
+                tipo_logradouro = endereco.tipo_logradouro,
             };
 
             return enderecoDTO;

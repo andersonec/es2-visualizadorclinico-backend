@@ -33,11 +33,11 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             }
         }
 
-        public virtual Profissional GetById(int id)
+        public virtual Profissional GetById(string id)
         {
             try
             {
-                var entity = _context.Profissionais.Where(b => b.registro_profissional == id).FirstOrDefault();
+                var entity = _context.Profissionais.Where(b => b.registro_profissional.Equals(id)).FirstOrDefault();
 
                 if (entity == null)
                     return null;

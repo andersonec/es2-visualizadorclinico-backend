@@ -9,7 +9,7 @@ namespace VisualizadorClinico.Infra.Data.IRepositories
 {
     public interface IEnderecoRepository
     {
-        void Add(Endereco entity);
+        Endereco Add(Endereco entity, int id_pessoa);
 
         Endereco GetById(int id);
 

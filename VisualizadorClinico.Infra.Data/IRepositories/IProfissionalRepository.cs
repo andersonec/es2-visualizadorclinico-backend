@@ -11,7 +11,7 @@ namespace VisualizadorClinico.Infra.Data.IRepositories
     {
         Profissional Add(Profissional entity);
 
-        Profissional GetById(int id);
+        Profissional GetById(string id);
 
         IEnumerable<Profissional> GetAll();
 

@@ -18,7 +18,7 @@ namespace VisualizadorClinico.Domain.Application.IAppServices
 
         void Update(NovoUsuarioDTO obj);
 
-        void Remove(UsuarioDTO obj);
+        void Remove(NovoUsuarioDTO obj);
 
         void Dispose();
     }

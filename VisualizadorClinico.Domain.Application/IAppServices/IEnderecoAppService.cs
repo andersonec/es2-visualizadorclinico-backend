@@ -10,7 +10,7 @@ namespace VisualizadorClinico.Domain.Application.IAppServices
 {
     public interface IEnderecoAppService
     {
-        void Add(EnderecoDTO obj);
+        EnderecoDTO Add(EnderecoDTO obj, int id_pessoa);
 
         EnderecoDTO GetById(int id);
 

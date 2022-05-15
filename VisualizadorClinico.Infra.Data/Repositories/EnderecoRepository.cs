@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using VisualizadorClinico.Infra.Data.Contexts;
 using VisualizadorClinico.Infra.Data.IRepositories;
 using VisualizadorClinico.Infra.Entities;
+using VisualizadorClinico.Infra.Entities.Relations;
 
 namespace VisualizadorClinico.Infra.Data.Repositories
 {
@@ -18,12 +19,22 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             _context = Context;
         }
 
-        public virtual void Add(Endereco obj)
+        public virtual Endereco Add(Endereco obj, int id_pessoa)
         {
             try
             {
-                _context.Set<Endereco>().Add(obj);
+                var endereco = _context.Set<Endereco>().Add(obj);
                 _context.SaveChanges();
+
+                var pessoaEndereco = new PessoaEndereco
+                {
+                    id_pessoa = id_pessoa,
+                    id_endereco = endereco.Entity.id_endereco
+                };
+                _context.pessoaEnderecos.Add(pessoaEndereco);
+                _context.SaveChanges();
+
+                return endereco.Entity;
             }
             catch (Exception ex)
             {
@@ -35,12 +46,14 @@ namespace VisualizadorClinico.Infra.Data.Repositories
         {
             try
             {
-                var entity = _context.Set<Endereco>().Find(id);
+                var entity = _context.pessoaEnderecos.Where(b => b.id_pessoa == id).FirstOrDefault();
 
-                if (entity == null)
+                var endereco = _context.Set<Endereco>().Find(entity.id_endereco);
+
+                if (endereco == null)
                     return null;
                 else
-                    return entity;
+                    return endereco;
             }
             catch (Exception ex)
             {

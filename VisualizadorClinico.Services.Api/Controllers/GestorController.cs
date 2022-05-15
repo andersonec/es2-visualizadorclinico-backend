@@ -16,12 +16,14 @@ namespace VisualizadorClinico.Services.Api.Controllers
         private readonly IPessoaAppService _pessoaAppService;
         private readonly IUsuarioAppService _usuarioAppService;
         private readonly IProfissionalAppService _profissionalAppService;
+        private readonly IEnderecoAppService _enderecoAppService;
 
-        public GestorController(IPessoaAppService pessoaAppService, IUsuarioAppService usuarioAppService, IProfissionalAppService profissionalAppService)
+        public GestorController(IPessoaAppService pessoaAppService, IUsuarioAppService usuarioAppService, IProfissionalAppService profissionalAppService, IEnderecoAppService enderecoAppService)
         {
             _pessoaAppService = pessoaAppService;
             _usuarioAppService = usuarioAppService;
             _profissionalAppService = profissionalAppService;
+            _enderecoAppService = enderecoAppService;
         }
 
         // Cadastrar Novos Profissionais.
@@ -37,7 +39,15 @@ namespace VisualizadorClinico.Services.Api.Controllers
             if (novoProfissional.profissional == null)
                 return BadRequest("Insira todos os dados do profissional");
 
+            if (novoProfissional.endereco == null)
+                return BadRequest("Insira todos os dados do endereço do profissional");
+
             var pessoa = _pessoaAppService.Add(novoProfissional.pessoa);
+            if (pessoa == null)
+            {
+                return BadRequest("Erro ao adicionar pessoa");
+            }
+
 
             var usuario = new NovoUsuarioDTO
             {
@@ -48,6 +58,12 @@ namespace VisualizadorClinico.Services.Api.Controllers
                 tipo = novoProfissional.usuario.tipo
             };
             usuario = _usuarioAppService.Add(usuario);
+            if (usuario == null)
+            {
+                _pessoaAppService.Remove(pessoa);
+                return BadRequest("Erro ao adicionar usuário");
+            }
+
 
             var profissional = new ProfissionalDTO
             {
@@ -55,14 +71,29 @@ namespace VisualizadorClinico.Services.Api.Controllers
                 registro_profissional = novoProfissional.profissional.registro_profissional,
                 especialidade = novoProfissional.profissional.especialidade
             };
-            profissional = _profissionalAppService.Add(novoProfissional.profissional);
+            profissional = _profissionalAppService.Add(profissional);
+            if (profissional == null)
+            {
+                _pessoaAppService.Remove(pessoa);
+                _usuarioAppService.Remove(usuario);
+                return BadRequest("Erro ao adicionar profissional");
+            }
 
+            var endereco = _enderecoAppService.Add(novoProfissional.endereco, pessoa.id_pessoa);
+            if (usuario == null)
+            {
+                _usuarioAppService.Remove(usuario);
+                _pessoaAppService.Remove(pessoa);
+                _profissionalAppService.Remove(profissional);
+                return BadRequest("Erro ao adicionar endereço");
+            }
 
             var newUser = new NovoProfissionalResult
             {
                 pessoa = pessoa,
                 usuario = usuario,
-                profissional = profissional
+                profissional = profissional,
+                endereco = endereco
             };
 
             return Ok(newUser);
@@ -72,7 +103,7 @@ namespace VisualizadorClinico.Services.Api.Controllers
 
         // Consultar Cadastro de Profissional.
         [HttpGet("ConsultarCadastroProfissional/{registro_profissional}")]
-        public ActionResult<ProfissionalReturn> GetProfessional(int registro_profissional)
+        public ActionResult<ProfissionalReturn> GetProfessional(string registro_profissional)
         {
             var profissional = _profissionalAppService.GetById(registro_profissional);
             if (profissional == null)
@@ -86,11 +117,17 @@ namespace VisualizadorClinico.Services.Api.Controllers
             if (pessoa == null)
                 return NotFound("Erro na busca pelos dados pessoais do profissional.");
 
+            var endereco = _enderecoAppService.GetById(pessoa.id_pessoa);
+            if (endereco == null)
+                return NotFound("Erro na busca pelo endereço do profissional.");
+
+
             var prof = new ProfissionalReturn
             {
                 pessoa = pessoa,
                 usuario = usuario,
-                profissional = profissional
+                profissional = profissional,
+                endereco = endereco
             };
 
             return Ok(prof);
@@ -113,6 +150,7 @@ namespace VisualizadorClinico.Services.Api.Controllers
         public NovaPessoaDTO pessoa { get; set; } = new NovaPessoaDTO();
         public NovoUsuarioDTO usuario { get; set; } = new NovoUsuarioDTO();
         public ProfissionalDTO profissional { get; set; } = new ProfissionalDTO();
+        public EnderecoDTO endereco { get; set; } = new EnderecoDTO();
     }
 
     public class NovoProfissionalResult
@@ -120,6 +158,7 @@ namespace VisualizadorClinico.Services.Api.Controllers
         public PessoaDTO pessoa { get; set; } = new PessoaDTO();
         public NovoUsuarioDTO usuario { get; set; } = new NovoUsuarioDTO();
         public ProfissionalDTO profissional { get; set; } = new ProfissionalDTO();
+        public EnderecoDTO endereco { get; set; } = new EnderecoDTO();
     }
 
     public class ProfissionalReturn
@@ -127,5 +166,6 @@ namespace VisualizadorClinico.Services.Api.Controllers
         public PessoaDTO pessoa { get; set; } = new PessoaDTO();
         public UsuarioDTO usuario { get; set; } = new UsuarioDTO();
         public ProfissionalDTO profissional { get; set; } = new ProfissionalDTO();
+        public EnderecoDTO endereco { get; set; } = new EnderecoDTO();
     }
 }

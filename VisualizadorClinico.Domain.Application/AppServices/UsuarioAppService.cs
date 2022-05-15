@@ -56,9 +56,9 @@ namespace VisualizadorClinico.Domain.Application.AppServices
             var user = _userMapper.MapperNewToEntity(obj);
             _userRepository.Update(user);
         }
-        public virtual void Remove(UsuarioDTO obj)
+        public virtual void Remove(NovoUsuarioDTO obj)
         {
-            var user = _userMapper.MapperToEntity(obj);
+            var user = _userMapper.MapperNewToEntity(obj);
             _userRepository.Remove(user);
         }
 

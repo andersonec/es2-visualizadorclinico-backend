@@ -12,7 +12,7 @@ namespace VisualizadorClinico.Domain.Application.IAppServices
     {
         ProfissionalDTO Add(ProfissionalDTO obj);
 
-        ProfissionalDTO GetById(int id);
+        ProfissionalDTO GetById(string id);
 
         IEnumerable<ProfissionalDTO> GetAll();
 

@@ -46,7 +46,7 @@ namespace VisualizadorClinico.Domain.Application.AppServices
                 return _profissionalMapper.MapperListProfissionais(profissional);
         }
 
-        public virtual ProfissionalDTO GetById(int id)
+        public virtual ProfissionalDTO GetById(string id)
         {
             var profissional = _profissionalRepository.GetById(id);
             return _profissionalMapper.MapperToDTO(profissional);

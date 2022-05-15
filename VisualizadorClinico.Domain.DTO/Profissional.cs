@@ -11,7 +11,7 @@ namespace VisualizadorClinico.Domain.DTO
     public class ProfissionalDTO
     {
         public int id_usuario { get; set; }
-        public int registro_profissional { get; set; }
+        public string registro_profissional { get; set; }
         public string especialidade { get; set; }
     }
 }

@@ -22,16 +22,18 @@ namespace VisualizadorClinico.Domain.Application.AppServices
             _enderecoRepository = enderecoRepository;
         }
 
-        public void Add(EnderecoDTO obj)
+        public EnderecoDTO Add(EnderecoDTO obj, int id_pessoa)
         {
             if (obj != null)
             {
                 var endereco = _enderecoMapper.MapperToEntity(obj);
 
-                _enderecoRepository.Add(endereco);
+                var novoEndereco = _enderecoRepository.Add(endereco, id_pessoa);
+
+                return _enderecoMapper.MapperToDTO(novoEndereco);
             }
             else
-                return;
+                return null;
         }
 
         public virtual IEnumerable<EnderecoDTO> GetAll()

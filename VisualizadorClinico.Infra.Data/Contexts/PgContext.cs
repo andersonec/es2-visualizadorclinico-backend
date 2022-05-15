@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VisualizadorClinico.Infra.Entities;
+using VisualizadorClinico.Infra.Entities.Relations;
 
 namespace VisualizadorClinico.Infra.Data.Contexts
 {
@@ -35,6 +36,7 @@ namespace VisualizadorClinico.Infra.Data.Contexts
         public DbSet<HistoricoProfissional> HistoricoProfissionais { get; set; }
 
         public DbSet<Endereco> Enderecos { get; set; }
+        public DbSet<PessoaEndereco> pessoaEnderecos { get; set; }
         #endregion
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace VisualizadorClinico.Infra.Entities.Relations
 {
     [Table("pessoa_endereco")]
-    public class pessoaEndereco
+    public class PessoaEndereco
     {
         [Key]
         public int id_pessoa_endereco { get; set; }
