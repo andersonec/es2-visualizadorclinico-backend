@@ -26,39 +26,39 @@ namespace VisualizadorClinico.Services.Api.Controllers
 
         // Cadastrar Novos Profissionais.
         [HttpPost("CadastrarProfissional")]
-        public ActionResult<NewProfessionalReturn> NewUser(NewUser novoUsuario)
+        public ActionResult<NovoProfissionalResult> NewUser(NovoProfissional novoProfissional)
         {
-            if (novoUsuario.pessoa == null)
+            if (novoProfissional.pessoa == null)
                 return BadRequest("Insira todos os dados de usuário.");
 
-            if (novoUsuario.usuario == null)
+            if (novoProfissional.usuario == null)
                 return BadRequest("Insira todos os dados de usuário");
 
-            if (novoUsuario.profissional == null)
+            if (novoProfissional.profissional == null)
                 return BadRequest("Insira todos os dados do profissional");
 
-            var pessoa = _pessoaAppService.Add(novoUsuario.pessoa);
+            var pessoa = _pessoaAppService.Add(novoProfissional.pessoa);
 
             var usuario = new NovoUsuarioDTO
             {
                 id_usuario = pessoa.id_pessoa,
-                login = novoUsuario.usuario.login,
-                senha = novoUsuario.usuario.senha,
-                status = novoUsuario.usuario.status,
-                tipo = novoUsuario.usuario.tipo
+                login = novoProfissional.usuario.login,
+                senha = novoProfissional.usuario.senha,
+                status = novoProfissional.usuario.status,
+                tipo = novoProfissional.usuario.tipo
             };
             usuario = _usuarioAppService.Add(usuario);
 
             var profissional = new ProfissionalDTO
             {
                 id_usuario = usuario.id_usuario,
-                registro_profissional = novoUsuario.profissional.registro_profissional,
-                especialidade = novoUsuario.profissional.especialidade
+                registro_profissional = novoProfissional.profissional.registro_profissional,
+                especialidade = novoProfissional.profissional.especialidade
             };
-            profissional = _profissionalAppService.Add(novoUsuario.profissional);
+            profissional = _profissionalAppService.Add(novoProfissional.profissional);
 
 
-            var newUser = new NewProfessionalReturn
+            var newUser = new NovoProfissionalResult
             {
                 pessoa = pessoa,
                 usuario = usuario,
@@ -72,7 +72,7 @@ namespace VisualizadorClinico.Services.Api.Controllers
 
         // Consultar Cadastro de Profissional.
         [HttpGet("ConsultarCadastroProfissional/{registro_profissional}")]
-        public ActionResult<ProfessionalReturn> GetProfessional(int registro_profissional)
+        public ActionResult<ProfissionalReturn> GetProfessional(int registro_profissional)
         {
             var profissional = _profissionalAppService.GetById(registro_profissional);
             if (profissional == null)
@@ -86,7 +86,7 @@ namespace VisualizadorClinico.Services.Api.Controllers
             if (pessoa == null)
                 return NotFound("Erro na busca pelos dados pessoais do profissional.");
 
-            var prof = new ProfessionalReturn
+            var prof = new ProfissionalReturn
             {
                 pessoa = pessoa,
                 usuario = usuario,
@@ -97,7 +97,7 @@ namespace VisualizadorClinico.Services.Api.Controllers
         }
 
         [HttpPut("AtualizarDadosProfissional")]
-        public ActionResult UpdateProfessional(NewProfessionalReturn atualizarProfissional)
+        public ActionResult UpdateProfessional(NovoProfissionalResult atualizarProfissional)
         {
 
             _pessoaAppService.Update(atualizarProfissional.pessoa);
@@ -108,21 +108,21 @@ namespace VisualizadorClinico.Services.Api.Controllers
         }
     }
 
-    public class NewUser
+    public class NovoProfissional
     {
         public NovaPessoaDTO pessoa { get; set; } = new NovaPessoaDTO();
         public NovoUsuarioDTO usuario { get; set; } = new NovoUsuarioDTO();
         public ProfissionalDTO profissional { get; set; } = new ProfissionalDTO();
     }
 
-    public class NewProfessionalReturn
+    public class NovoProfissionalResult
     {
         public PessoaDTO pessoa { get; set; } = new PessoaDTO();
         public NovoUsuarioDTO usuario { get; set; } = new NovoUsuarioDTO();
         public ProfissionalDTO profissional { get; set; } = new ProfissionalDTO();
     }
 
-    public class ProfessionalReturn
+    public class ProfissionalReturn
     {
         public PessoaDTO pessoa { get; set; } = new PessoaDTO();
         public UsuarioDTO usuario { get; set; } = new UsuarioDTO();
