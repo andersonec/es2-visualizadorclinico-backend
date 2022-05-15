@@ -15,11 +15,13 @@ namespace VisualizadorClinico.Services.Api.Controllers
     {
         private readonly IPessoaAppService _pessoaAppService;
         private readonly IPacienteAppService _pacienteAppService;
+        private readonly IEnderecoAppService _enderecoAppService;
 
-        public RecepcionistaController(IPessoaAppService pessoaAppService, IPacienteAppService pacienteAppService)
+        public RecepcionistaController(IPessoaAppService pessoaAppService, IPacienteAppService pacienteAppService, IEnderecoAppService enderecoAppService)
         {
             _pessoaAppService = pessoaAppService;
             _pacienteAppService = pacienteAppService;
+            _enderecoAppService = enderecoAppService;
         }
 
         // Cadastrar paciente
@@ -32,8 +34,22 @@ namespace VisualizadorClinico.Services.Api.Controllers
             if (novoPaciente.paciente == null)
                 return BadRequest("Insira todos os dados do paciente");
 
+            if (novoPaciente.endereco == null)
+                return BadRequest("Insira todos os dados do endereço do paciente");
+
 
             var pessoa = _pessoaAppService.Add(novoPaciente.pessoa);
+            if (pessoa == null)
+            {
+                return BadRequest("Erro ao adicionar pessoa");
+            }
+
+            var endereco = _enderecoAppService.Add(novoPaciente.endereco, pessoa.id_pessoa);
+            if (endereco == null)
+            {
+                _pessoaAppService.Remove(pessoa);
+                return BadRequest("Erro ao adicionar endereço");
+            }
 
             var paciente = new PacienteDTO
             {
@@ -50,6 +66,7 @@ namespace VisualizadorClinico.Services.Api.Controllers
             {
                 pessoa = pessoa,
                 paciente = paciente,
+                endereco = endereco,
             };
 
             return Ok(newUser);
@@ -67,10 +84,15 @@ namespace VisualizadorClinico.Services.Api.Controllers
             if (pessoa == null)
                 return NotFound("Erro na busca pelos dados pessoais do paciente.");
 
+            var endereco = _enderecoAppService.GetById(pessoa.id_pessoa);
+            if (pessoa == null)
+                return NotFound("Erro na busca pelo endereço do paciente.");
+
             var prof = new NovoPacienteResult
             {
                 pessoa = pessoa,
                 paciente = paciente,
+                endereco=endereco,
             };
 
             return Ok(prof);
@@ -82,6 +104,7 @@ namespace VisualizadorClinico.Services.Api.Controllers
 
             _pessoaAppService.Update(atualizarPaciente.pessoa);
             _pacienteAppService.Update(atualizarPaciente.paciente);
+            _enderecoAppService.Update(atualizarPaciente.endereco);
 
             return Ok();
         }
@@ -93,10 +116,12 @@ namespace VisualizadorClinico.Services.Api.Controllers
     {
         public NovaPessoaDTO pessoa { get; set; } = new NovaPessoaDTO();
         public PacienteDTO paciente { get; set; } = new PacienteDTO();
+        public EnderecoDTO endereco { get; set; } = new EnderecoDTO();
     }
     public class NovoPacienteResult
     {
         public PessoaDTO pessoa { get; set; } = new PessoaDTO();
         public PacienteDTO paciente { get; set; } = new PacienteDTO();
+        public EnderecoDTO endereco { get; set; } = new EnderecoDTO();
     }
 }

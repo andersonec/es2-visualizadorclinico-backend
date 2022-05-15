@@ -83,6 +83,7 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             try
             {
                 //_context.ChangeTracker.Clear();
+                _context.Enderecos.Attach(obj);
                 _context.Entry(obj).State = EntityState.Modified;
                 _context.SaveChanges();
             }

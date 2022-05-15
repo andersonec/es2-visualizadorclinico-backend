@@ -140,6 +140,7 @@ namespace VisualizadorClinico.Services.Api.Controllers
             _pessoaAppService.Update(atualizarProfissional.pessoa);
             _usuarioAppService.Update(atualizarProfissional.usuario);
             _profissionalAppService.Update(atualizarProfissional.profissional);
+            _enderecoAppService.Update(atualizarProfissional.endereco);
 
             return Ok();
         }
