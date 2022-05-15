@@ -15,11 +15,13 @@ namespace VisualizadorClinico.Services.Api.Controllers
     {
         private readonly IPessoaAppService _pessoaAppService;
         private readonly IPacienteAppService _pacienteAppService;
+        private readonly IEnderecoAppService _enderecoAppService;
 
-        public EnfermeiroController(IPessoaAppService pessoaAppService, IPacienteAppService pacienteAppService)
+        public EnfermeiroController(IPessoaAppService pessoaAppService, IPacienteAppService pacienteAppService, IEnderecoAppService enderecoAppService)
         {
             _pessoaAppService = pessoaAppService;
             _pacienteAppService = pacienteAppService;
+            _enderecoAppService = enderecoAppService;
         }
 
         // Consultar dados de paciente
@@ -34,10 +36,15 @@ namespace VisualizadorClinico.Services.Api.Controllers
             if (pessoa == null)
                 return NotFound("Erro na busca pelos dados pessoais do paciente.");
 
+            var endereco = _enderecoAppService.GetById(pessoa.id_pessoa);
+            if (pessoa == null)
+                return NotFound("Erro na busca pelo endereço do paciente.");
+
             var prof = new NovoPacienteResult
             {
                 pessoa = pessoa,
                 paciente = paciente,
+                endereco = endereco,
             };
 
             return Ok(prof);
@@ -50,6 +57,7 @@ namespace VisualizadorClinico.Services.Api.Controllers
 
             _pessoaAppService.Update(atualizarPaciente.pessoa);
             _pacienteAppService.Update(atualizarPaciente.paciente);
+            _enderecoAppService.Update(atualizarPaciente.endereco);
 
             return Ok();
         }
