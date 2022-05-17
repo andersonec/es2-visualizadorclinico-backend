@@ -48,11 +48,11 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             }
         }
 
-        public virtual IEnumerable<HistoricoProfissional> GetAll()
+        public virtual IEnumerable<HistoricoProfissional> GetAll(int id_profissional)
         {
             try
             {
-                var list = _context.Set<HistoricoProfissional>().ToList();
+                var list = _context.HistoricoProfissionais.Where(b => b.id_profissional == id_profissional).ToList();
 
                 if (list == null)
                     return null;

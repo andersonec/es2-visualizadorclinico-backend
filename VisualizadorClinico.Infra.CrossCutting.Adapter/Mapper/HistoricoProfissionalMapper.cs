@@ -17,6 +17,12 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
         {
             HistoricoProfissional historicoProfissional = new HistoricoProfissional
             {
+                tipo_procedimento = historicoProfissionalDTO.tipo_procedimento,
+                diagnostico = historicoProfissionalDTO.diagnostico,
+                codigo = historicoProfissionalDTO.codigo,
+                id_paciente = historicoProfissionalDTO.id_paciente,
+                data_hora = historicoProfissionalDTO.data_hora,
+                id_profissional = historicoProfissionalDTO.id_profissional,
             };
 
             return historicoProfissional;
@@ -28,6 +34,13 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
             {
                 HistoricoProfissionalDTO historicoProfissionalDTO = new HistoricoProfissionalDTO
                 {
+                    id_historico = historicoProfissional.id_historico,
+                    tipo_procedimento = historicoProfissional.tipo_procedimento,
+                    diagnostico = historicoProfissional.diagnostico,
+                    codigo = historicoProfissional.codigo,
+                    id_paciente = historicoProfissional.id_paciente,
+                    data_hora = historicoProfissional.data_hora,
+                    id_profissional = historicoProfissional.id_profissional,
                 };
 
                 historicoProfissionalDTOs.Add(historicoProfissionalDTO);
@@ -40,6 +53,13 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
         {
             HistoricoProfissionalDTO historicoProfissionalDTO = new HistoricoProfissionalDTO
             {
+                id_historico = historicoProfissional.id_historico,
+                tipo_procedimento = historicoProfissional.tipo_procedimento,
+                diagnostico = historicoProfissional.diagnostico,
+                codigo = historicoProfissional.codigo,
+                id_paciente = historicoProfissional.id_paciente,
+                data_hora = historicoProfissional.data_hora,
+                id_profissional = historicoProfissional.id_profissional,
             };
 
             return historicoProfissionalDTO;

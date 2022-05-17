@@ -13,7 +13,7 @@ namespace VisualizadorClinico.Infra.Data.IRepositories
 
         HistoricoProfissional GetById(int id);
 
-        IEnumerable<HistoricoProfissional> GetAll();
+        IEnumerable<HistoricoProfissional> GetAll(int id_profissional);
 
         void Update(HistoricoProfissional obj);
 

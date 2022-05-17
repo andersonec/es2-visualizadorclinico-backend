@@ -29,7 +29,10 @@ namespace VisualizadorClinico.Infra.Data.Contexts
         public DbSet<Enfermeiro> Enfermeiros { get; set; }
 
         public DbSet<Cirurgia> Cirurgias { get; set; }
+
         public DbSet<Consulta> Consultas { get; set; }
+        public DbSet<ProfissionalConsulta> profissionalConsultas { get; set; }
+
         public DbSet<Exame> Exames { get; set; }
 
         public DbSet<HistoricoPaciente> HistoricoPacientes { get; set; }

@@ -9,7 +9,7 @@ namespace VisualizadorClinico.Infra.Data.IRepositories
 {
     public interface IConsultaRepository
     {
-        void Add(Consulta entity);
+        Consulta Add(Consulta entity, int id_profissional, int id_paciente);
 
         Consulta GetById(int id);
 

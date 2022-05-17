@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using VisualizadorClinico.Infra.Data.Contexts;
 using VisualizadorClinico.Infra.Data.IRepositories;
 using VisualizadorClinico.Infra.Entities;
+using VisualizadorClinico.Infra.Entities.Relations;
 
 namespace VisualizadorClinico.Infra.Data.Repositories
 {
@@ -18,12 +19,45 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             _context = Context;
         }
 
-        public virtual void Add(Consulta obj)
+        public virtual Consulta Add(Consulta obj, int id_profissional, int id_paciente)
         {
             try
             {
-                _context.Set<Consulta>().Add(obj);
+                var consulta = _context.Set<Consulta>().Add(obj);
                 _context.SaveChanges();
+
+                var profissionalConsulta = new ProfissionalConsulta
+                {
+                    id_consulta = consulta.Entity.id_consulta,
+                    id_profissional = id_profissional,
+                };
+                _context.profissionalConsultas.Add(profissionalConsulta);
+
+                HistoricoProfissional historico = new HistoricoProfissional
+                {
+                    id_profissional = id_profissional,
+                    data_hora = obj.data_hora,
+                    id_paciente = id_paciente,
+                    codigo = obj.codigo,
+                    diagnostico = obj.diagnostico,
+                    tipo_procedimento = "Consulta"
+                };
+                _context.HistoricoProfissionais.Add(historico);
+                _context.SaveChanges(true);
+
+                HistoricoPaciente historicoPaciente = new HistoricoPaciente
+                {
+                    id_paciente = id_paciente,
+                    id_profissional = id_profissional,
+                    codigo = obj.codigo,
+                    tipo_procedimento = "Consulta",
+                    data_hora = obj.data_hora,
+                    diagnostico = obj.diagnostico
+                };
+                _context.HistoricoPacientes.Add(historicoPaciente);
+                _context.SaveChanges(true);
+
+                return consulta.Entity;
             }
             catch (Exception ex)
             {
@@ -70,6 +104,7 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             try
             {
                 //_context.ChangeTracker.Clear();
+                _context.Consultas.Attach(obj);
                 _context.Entry(obj).State = EntityState.Modified;
                 _context.SaveChanges();
             }

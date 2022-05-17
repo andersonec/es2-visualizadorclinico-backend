@@ -17,6 +17,9 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
         {
             Consulta consulta = new Consulta
             {
+                codigo = consultaDTO.codigo,
+                data_hora = consultaDTO.data_hora,
+                diagnostico = consultaDTO.diagnostico,
             };
 
             return consulta;
@@ -28,6 +31,10 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
             {
                 ConsultaDTO consultaDTO = new ConsultaDTO
                 {
+                    id_consulta = consulta.id_consulta,
+                    codigo = consulta.codigo,
+                    data_hora = consulta.data_hora,
+                    diagnostico = consulta.diagnostico,
                 };
 
                 consultaDTOs.Add(consultaDTO);
@@ -40,6 +47,10 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
         {
             ConsultaDTO consultaDTO = new ConsultaDTO
             {
+                id_consulta = consulta.id_consulta,
+                codigo = consulta.codigo,
+                data_hora = consulta.data_hora,
+                diagnostico = consulta.diagnostico,
             };
 
             return consultaDTO;

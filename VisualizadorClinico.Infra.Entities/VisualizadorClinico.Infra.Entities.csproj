@@ -56,6 +56,7 @@
     <Compile Include="Profissional.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Relations\PessoaEndereco.cs" />
+    <Compile Include="Relations\ProfissionalConsulta.cs" />
     <Compile Include="Token.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>

@@ -14,7 +14,7 @@ namespace VisualizadorClinico.Domain.Application.IAppServices
 
         HistoricoProfissionalDTO GetById(int id);
 
-        IEnumerable<HistoricoProfissionalDTO> GetAll();
+        IEnumerable<HistoricoProfissionalDTO> GetAll(int id_profissional);
 
         void Update(HistoricoProfissionalDTO obj);
 

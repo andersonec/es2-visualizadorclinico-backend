@@ -17,7 +17,7 @@ namespace VisualizadorClinico.Infra.Entities
         public string tipo_procedimento { get; set; }
         public DateTime data_hora { get; set; }
         public string codigo { get; set; }
-        public int registro_profissional { get; set; }
+        public int id_profissional { get; set; }
         public string diagnostico { get; set; }
     }
 }

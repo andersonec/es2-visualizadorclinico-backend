@@ -61,5 +61,6 @@ namespace VisualizadorClinico.Services.Api.Controllers
 
             return Ok();
         }
+    
     }
 }

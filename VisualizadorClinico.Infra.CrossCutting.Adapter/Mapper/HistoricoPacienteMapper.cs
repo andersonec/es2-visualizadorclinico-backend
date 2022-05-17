@@ -17,6 +17,12 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
         {
             HistoricoPaciente historicoPaciente = new HistoricoPaciente
             {
+                diagnostico = historicoPacienteDTO.diagnostico,
+                data_hora = historicoPacienteDTO.data_hora,
+                tipo_procedimento = historicoPacienteDTO.tipo_procedimento,
+                codigo = historicoPacienteDTO.codigo,
+                id_paciente = historicoPacienteDTO.id_paciente,
+                id_profissional = historicoPacienteDTO.id_profissional,
             };
 
             return historicoPaciente;
@@ -28,6 +34,13 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
             {
                 HistoricoPacienteDTO historicoPacienteDTO = new HistoricoPacienteDTO
                 {
+                    id_historico = historicoPaciente.id_historico,
+                    diagnostico = historicoPaciente.diagnostico,
+                    data_hora = historicoPaciente.data_hora,
+                    tipo_procedimento = historicoPaciente.tipo_procedimento,
+                    codigo = historicoPaciente.codigo,
+                    id_paciente = historicoPaciente.id_paciente,
+                    id_profissional = historicoPaciente.id_profissional,
                 };
 
                 historicoPacienteDTOs.Add(historicoPacienteDTO);
@@ -40,6 +53,13 @@ namespace VisualizadorClinico.Infra.CrossCutting.Adapter.Mapper
         {
             HistoricoPacienteDTO historicoPacienteDTO = new HistoricoPacienteDTO
             {
+                id_historico = historicoPaciente.id_historico,
+                diagnostico = historicoPaciente.diagnostico,
+                data_hora = historicoPaciente.data_hora,
+                tipo_procedimento = historicoPaciente.tipo_procedimento,
+                codigo = historicoPaciente.codigo,
+                id_paciente = historicoPaciente.id_paciente,
+                id_profissional = historicoPaciente.id_profissional,
             };
 
             return historicoPacienteDTO;

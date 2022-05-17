@@ -34,9 +34,9 @@ namespace VisualizadorClinico.Domain.Application.AppServices
                 return;
         }
 
-        public virtual IEnumerable<HistoricoProfissionalDTO> GetAll()
+        public virtual IEnumerable<HistoricoProfissionalDTO> GetAll(int id_profissional)
         {
-            var historicoProfissional = _historicoProfissionalRepository.GetAll();
+            var historicoProfissional = _historicoProfissionalRepository.GetAll(id_profissional);
 
             if (historicoProfissional == null)
                 return null;

@@ -22,16 +22,18 @@ namespace VisualizadorClinico.Domain.Application.AppServices
             _consultaRepository = consultaRepository;
         }
 
-        public void Add(ConsultaDTO obj)
+        public ConsultaDTO Add(ConsultaDTO obj, int id_profissional, int id_paciente)
         {
             if (obj != null)
             {
                 var consulta = _consultaMapper.MapperToEntity(obj);
 
-                _consultaRepository.Add(consulta);
+                var novaConsulta = _consultaRepository.Add(consulta, id_profissional, id_paciente);
+
+                return _consultaMapper.MapperToDTO(novaConsulta);
             }
             else
-                return;
+                return null;
         }
 
         public virtual IEnumerable<ConsultaDTO> GetAll()
