@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdministradorDTO.cs" />
+    <Compile Include="AgendaDTO.cs" />
     <Compile Include="CirurgiaDTO.cs" />
     <Compile Include="ConsultaDTO.cs" />
     <Compile Include="EnderecoDTO.cs" />

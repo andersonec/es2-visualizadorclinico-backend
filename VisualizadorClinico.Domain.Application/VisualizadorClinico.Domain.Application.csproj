@@ -53,6 +53,7 @@
     <Compile Include="AppServices\PacienteAppService.cs" />
     <Compile Include="AppServices\PessoaAppService.cs" />
     <Compile Include="AppServices\ProcedimentoAppService.cs" />
+    <Compile Include="AppServices\AgendaAppService.cs" />
     <Compile Include="AppServices\ProfissionalAppService.cs" />
     <Compile Include="AppServices\UsuarioAppService.cs" />
     <Compile Include="IAppServices\IAuthAppService.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="IAppServices\IPacienteAppService.cs" />
     <Compile Include="IAppServices\IPessoaAppService.cs" />
     <Compile Include="IAppServices\IProcedimentoAppService.cs" />
+    <Compile Include="IAppServices\IAgendaAppService.cs" />
     <Compile Include="IAppServices\IProfissionalAppService.cs" />
     <Compile Include="IAppServices\IUsuarioAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

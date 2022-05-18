@@ -38,6 +38,9 @@ namespace VisualizadorClinico.Infra.Data.Contexts
         public DbSet<HistoricoPaciente> HistoricoPacientes { get; set; }
         public DbSet<HistoricoProfissional> HistoricoProfissionais { get; set; }
 
+        public DbSet<Agenda> Agendas { get; set; }
+        public DbSet<ProfissionalAgenda> ProfissionalAgendas { get; set; }
+
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<PessoaEndereco> pessoaEnderecos { get; set; }
         #endregion

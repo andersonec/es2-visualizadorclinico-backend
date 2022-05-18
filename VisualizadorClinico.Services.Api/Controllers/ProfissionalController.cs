@@ -18,16 +18,18 @@ namespace VisualizadorClinico.Services.Api.Controllers
         private readonly IConsultaAppService _consultaAppService;
         private readonly IProfissionalAppService _profissionalAppService;
         private readonly IHistoricoProfissionalAppService _historicoProfissionalAppService;
+        private readonly IAgendaAppService _agendaAppService;
 
         public ProfissionalController(IPessoaAppService pessoaAppService, IPacienteAppService pacienteAppService, 
                                       IConsultaAppService consultaAppService, IProfissionalAppService profissionalAppService,
-                                      IHistoricoProfissionalAppService historicoProfissionalAppService)
+                                      IHistoricoProfissionalAppService historicoProfissionalAppService, IAgendaAppService agendaAppService)
         {
             _pessoaAppService = pessoaAppService;
             _pacienteAppService = pacienteAppService;
             _consultaAppService = consultaAppService;
             _profissionalAppService = profissionalAppService;
             _historicoProfissionalAppService = historicoProfissionalAppService;
+            _agendaAppService = agendaAppService;
         }
 
         // Consultar dados de paciente
@@ -83,6 +85,36 @@ namespace VisualizadorClinico.Services.Api.Controllers
         }
 
         // Criar agenda de exames e consultas.
+        [HttpPost("AdicionarNaAgenda")]
+        public ActionResult AddAgenda(AgendaDTO agenda, string registro_profissional)
+        {
+            return Ok(_agendaAppService.Add(agenda, registro_profissional));
+        }
+
+        // Consultar Agenda
+        [HttpGet("ConsultarAgenda/{registro_profissional}")]
+        public ActionResult GetAgenda(string registro_profissional)
+        {
+            var agenda = _agendaAppService.GetAll(registro_profissional);
+
+            if (agenda == null)
+                return NotFound();
+
+            return Ok(agenda);
+        }
+
+        // Atualizar Agenda
+        [HttpPut("AtualizarAgenda")]
+        public ActionResult UpdateAgenda(AgendaDTO agenda)
+        {
+            _agendaAppService.Update(agenda);
+
+            if (agenda == null)
+                return BadRequest();
+
+            return Ok(agenda);
+        }
+
         // Prescrever a Evolução do Paciente.
         // Solicitar Exames.
     }
