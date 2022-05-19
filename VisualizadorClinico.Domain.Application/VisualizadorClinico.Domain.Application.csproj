@@ -47,6 +47,7 @@
     <Compile Include="AppServices\ConsultaAppService.cs" />
     <Compile Include="AppServices\EnderecoAppService.cs" />
     <Compile Include="AppServices\EnfermeiroAppService.cs" />
+    <Compile Include="AppServices\EvolucaoAppService.cs" />
     <Compile Include="AppServices\ExameAppService.cs" />
     <Compile Include="AppServices\HistoricoPacienteAppService.cs" />
     <Compile Include="AppServices\HistoricoProfissionalAppService.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="IAppServices\IConsultaAppService.cs" />
     <Compile Include="IAppServices\IEnderecoAppService.cs" />
     <Compile Include="IAppServices\IEnfermeiroAppService.cs" />
+    <Compile Include="IAppServices\IEvolucaoAppService.cs" />
     <Compile Include="IAppServices\IExameAppService.cs" />
     <Compile Include="IAppServices\IHistoricoPacienteAppService.cs" />
     <Compile Include="IAppServices\IHistoricoProfissionalAppService.cs" />

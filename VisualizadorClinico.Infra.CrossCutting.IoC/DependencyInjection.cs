@@ -31,6 +31,7 @@ namespace VisualizadorClinico.Infra.CrossCutting.IoC
             builder.RegisterType<ProfissionalAppService>().As<IProfissionalAppService>();
             builder.RegisterType<UsuarioAppService>().As<IUsuarioAppService>();
             builder.RegisterType<AgendaAppService>().As<IAgendaAppService>();
+            builder.RegisterType<EvolucaoAppService>().As<IEvolucaoAppService>();
 
             #endregion
 
@@ -51,6 +52,7 @@ namespace VisualizadorClinico.Infra.CrossCutting.IoC
             builder.RegisterType<ProfissionalMapper>().As<IProfissionalMapper>();
             builder.RegisterType<UsuarioMapper>().As<IUsuarioMapper>();
             builder.RegisterType<AgendaMapper>().As<IAgendaMapper>();
+            builder.RegisterType<EvolucaoMapper>().As<IEvolucaoMapper>();
 
             #endregion
 
@@ -72,6 +74,7 @@ namespace VisualizadorClinico.Infra.CrossCutting.IoC
             builder.RegisterType<ProfissionalRepository>().As<IProfissionalRepository>();
             builder.RegisterType<UsuarioRepository>().As<IUsuarioRepository>();
             builder.RegisterType<AgendaRepository>().As<IAgendaRepository>();
+            builder.RegisterType<EvolucaoRepository>().As<IEvolucaoRepository>();
 
             #endregion
 

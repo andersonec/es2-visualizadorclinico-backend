@@ -46,6 +46,7 @@
     <Compile Include="IMapper\IConsultaMapper.cs" />
     <Compile Include="IMapper\IEnderecoMapper.cs" />
     <Compile Include="IMapper\IEnfermeiroMapper.cs" />
+    <Compile Include="IMapper\IEvolucaoMapper.cs" />
     <Compile Include="IMapper\IExameMapper.cs" />
     <Compile Include="IMapper\IHistoricoPacienteMapper.cs" />
     <Compile Include="IMapper\IHistoricoProfissionalMapper.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="IMapper\IAgendaMapper.cs" />
     <Compile Include="IMapper\IProfissionalMapper.cs" />
     <Compile Include="IMapper\IUsuarioMapper.cs" />
+    <Compile Include="Mapper\EvolucaoMapper.cs" />
     <Compile Include="Mapper\ExameMapper.cs" />
     <Compile Include="Mapper\CirurgiaMapper.cs" />
     <Compile Include="Mapper\ConsultaMapper.cs" />

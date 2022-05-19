@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using VisualizadorClinico.Infra.Data.Contexts;
 using VisualizadorClinico.Infra.Data.IRepositories;
 using VisualizadorClinico.Infra.Entities;
+using VisualizadorClinico.Infra.Entities.Relations;
 
 namespace VisualizadorClinico.Infra.Data.Repositories
 {
@@ -18,12 +19,62 @@ namespace VisualizadorClinico.Infra.Data.Repositories
             _context = Context;
         }
 
-        public virtual void Add(Exame obj)
+        public virtual Exame Add(Exame obj)
         {
             try
             {
-                _context.Set<Exame>().Add(obj);
+                var exame = _context.Set<Exame>().Add(obj);
                 _context.SaveChanges();
+
+                if(exame == null)
+                    return null;
+
+                return exame.Entity;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public virtual Exame AddRealized(Exame obj, int id_profissional, int id_paciente)
+        {
+            try
+            {
+                var exame = _context.Set<Exame>().Add(obj);
+                _context.SaveChanges();
+
+                var profissionalExame = new ProfissionalExame
+                {
+                    id_exame = exame.Entity.id_exame,
+                    id_profissional = id_profissional,
+                };
+                _context.profissionalExames.Add(profissionalExame);
+
+                HistoricoProfissional historico = new HistoricoProfissional
+                {
+                    id_profissional = id_profissional,
+                    data_hora = obj.data_hora,
+                    id_paciente = id_paciente,
+                    codigo = obj.codigo,
+                    diagnostico = obj.diagnostico,
+                    tipo_procedimento = "Exame"
+                };
+                _context.HistoricoProfissionais.Add(historico);
+                _context.SaveChanges(true);
+
+                HistoricoPaciente historicoPaciente = new HistoricoPaciente
+                {
+                    id_paciente = id_paciente,
+                    id_profissional = id_profissional,
+                    codigo = obj.codigo,
+                    tipo_procedimento = "Exame",
+                    data_hora = obj.data_hora,
+                    diagnostico = obj.diagnostico
+                };
+                _context.HistoricoPacientes.Add(historicoPaciente);
+                _context.SaveChanges(true);
+
+                return exame.Entity;
             }
             catch (Exception ex)
             {

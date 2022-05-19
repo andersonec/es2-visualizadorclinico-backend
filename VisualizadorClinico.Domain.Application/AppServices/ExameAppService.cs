@@ -22,16 +22,32 @@ namespace VisualizadorClinico.Domain.Application.AppServices
             _exameRepository = exameRepository;
         }
 
-        public void Add(ExameDTO obj)
+        public ExameDTO Add(ExameDTO obj)
         {
             if (obj != null)
             {
                 var exame = _exameMapper.MapperToEntity(obj);
 
-                _exameRepository.Add(exame);
+                var exameNew = _exameRepository.Add(exame);
+
+                return _exameMapper.MapperToDTO(exameNew);
             }
             else
-                return;
+                return null;
+        }
+
+        public ExameDTO AddRealized(ExameDTO obj, int id_profissional, int id_paciente)
+        {
+            if (obj != null)
+            {
+                var exame = _exameMapper.MapperToEntity(obj);
+
+                var novoExame = _exameRepository.AddRealized(exame, id_profissional, id_paciente);
+
+                return _exameMapper.MapperToDTO(novoExame);
+            }
+            else
+                return null;
         }
 
         public virtual IEnumerable<ExameDTO> GetAll()

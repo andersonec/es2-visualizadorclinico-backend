@@ -9,7 +9,9 @@ namespace VisualizadorClinico.Infra.Data.IRepositories
 {
     public interface IExameRepository
     {
-        void Add(Exame entity);
+        Exame Add(Exame entity);
+
+        Exame AddRealized(Exame obj, int id_profissional, int id_paciente);
 
         Exame GetById(int id);
 

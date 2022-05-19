@@ -169,6 +169,7 @@
   <ItemGroup>
     <Compile Include="Contexts\PgContext.cs" />
     <Compile Include="IRepositories\IAuthRepository.cs" />
+    <Compile Include="IRepositories\IEvolucaoRepository.cs" />
     <Compile Include="IRepositories\IPessoaRepository.cs" />
     <Compile Include="IRepositories\IAdministradorRepository.cs" />
     <Compile Include="IRepositories\ICirurgiaRepository.cs" />
@@ -185,6 +186,7 @@
     <Compile Include="IRepositories\IUsuarioRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AuthRepository.cs" />
+    <Compile Include="Repositories\EvolucaoRepository.cs" />
     <Compile Include="Repositories\PacienteRepository.cs" />
     <Compile Include="Repositories\ProcedimentoRepository.cs" />
     <Compile Include="Repositories\AgendaRepository.cs" />

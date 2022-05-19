@@ -48,6 +48,7 @@
     <Compile Include="ConsultaDTO.cs" />
     <Compile Include="EnderecoDTO.cs" />
     <Compile Include="EnfermeiroDTO.cs" />
+    <Compile Include="EvolucaoPacienteDTO.cs" />
     <Compile Include="ExameDTO.cs" />
     <Compile Include="HistoricoPacienteDTO.cs" />
     <Compile Include="HistoricoProfissionalDTO.cs" />

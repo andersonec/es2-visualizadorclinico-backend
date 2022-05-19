@@ -8,19 +8,17 @@ using VisualizadorClinico.Infra.Entities;
 
 namespace VisualizadorClinico.Domain.Application.IAppServices
 {
-    public interface IExameAppService
+    public interface IEvolucaoAppService
     {
-        ExameDTO Add(ExameDTO obj);
+        EvolucaoPacienteDTO Add(EvolucaoPacienteDTO obj);
 
-        ExameDTO AddRealized(ExameDTO obj, int id_profissional, int id_paciente);
+        EvolucaoPacienteDTO GetById(int id);
 
-        ExameDTO GetById(int id);
+        IEnumerable<EvolucaoPacienteDTO> GetAll(int id);
 
-        IEnumerable<ExameDTO> GetAll();
+        void Update(EvolucaoPacienteDTO obj);
 
-        void Update(ExameDTO obj);
-
-        void Remove(ExameDTO obj);
+        void Remove(EvolucaoPacienteDTO obj);
 
         void Dispose();
     }
